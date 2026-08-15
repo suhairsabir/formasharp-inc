@@ -28,10 +28,10 @@ function ThreeDPrinting() {
                 PROTOTYPING &{" "}
                 <span className="text-[#ff6726]">3D PRINTING</span>
               </h4>
-              <h1 className="max-w-[85vw] !text-[2rem] !leading-[1.1] font-bold text-white pt-4">
+              <p className="max-w-[85vw] !text-[2rem] !leading-[1.1] font-bold !text-white pt-4" style={{ fontFamily: "'Clash Grotesk', sans-serif" }}>
                 Rapid Prototyping &{" "}
-                <span className="text-[#ff6726]">3D Printing</span>
-              </h1>
+                <span className="!text-[#ff6726]">3D Printing</span>
+              </p>
               <h3 className="max-w-2xl !text-[1.125rem] text-white/80">
                 Test, Validate, and Refine Your Product Before Manufacturing. We turn digital designs into tangible prototypes that reveal what drawings alone can’t.
               </h3>
@@ -207,10 +207,10 @@ assess assembly, and make informed decisions with greater certainty.</p>
           <div className="mb-6 text-xs font-semibold uppercase tracking-[0.2em] text-[#ff6726]">
             Get Started
           </div>
-          <h1 className="!text-6xl !leading-none font-bold text-white max-md:!text-[2rem] max-md:!leading-[1.1]">
+          <h2 className="!text-6xl !leading-none font-bold text-white max-md:!text-[2rem] max-md:!leading-[1.1]">
             Move from CAD files to{" "}
             <span className="italic text-[#ff6726]">test-ready prototypes</span>
-          </h1>
+          </h2>
           <p className="mt-6 max-w-2xl text-base leading-relaxed !text-white max-md:!text-[1.125rem] md:text-lg">
             Share your STL, STEP, or CAD geometry and tell us what you need to
             prove. FormaSharp can help you print functional parts, refine

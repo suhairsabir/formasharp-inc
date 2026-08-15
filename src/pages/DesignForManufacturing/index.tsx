@@ -253,11 +253,11 @@ function DesignForManufacturing() {
                 DESIGN FOR MANUFACTURING{" "}
                 <span className="text-[#ff6726]">(DFM)</span>
               </h4>
-              <h1 className="max-w-3xl !text-[2rem] !leading-[1.1] font-bold text-white pt-5">
+              <p className="max-w-3xl !text-[2rem] !leading-[1.1] font-bold !text-white pt-5" style={{ fontFamily: "'Clash Grotesk', sans-serif" }}>
                 Prepare your product for efficient,{" "}
-                <span className="text-[#ff6726]">cost-effective</span>{" "}
+                <span className="!text-[#ff6726]">cost-effective</span>{" "}
                 production.
-              </h1>
+              </p>
               <div className="mt-8 flex w-full flex-col items-stretch gap-3">
                 <Link
                   href={quotePageUrl("dfm")}
@@ -688,12 +688,12 @@ function DesignForManufacturing() {
           <div className="mb-6 text-xs font-semibold uppercase tracking-[0.2em] text-[#ff6726]">
             Get Started
           </div>
-          <h1 className="!text-6xl !leading-none font-bold text-white max-md:!text-[2rem] max-md:!leading-[1.1]">
+          <h2 className="!text-6xl !leading-none font-bold text-white max-md:!text-[2rem] max-md:!leading-[1.1]">
             Reduce production costs
             <br />
             <span className="italic text-[#ff6726]">before</span> manufacturing
             begins.
-          </h1>
+          </h2>
           <p className="mt-6 max-w-2xl text-base leading-relaxed !text-white max-md:!text-[1.125rem] md:text-lg">
             Whether you are preparing a new product for launch or improving an
             existing design, FormaSharp can identify practical changes that

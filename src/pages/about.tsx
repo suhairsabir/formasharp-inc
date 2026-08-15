@@ -316,10 +316,10 @@ export default function About() {
           <div className="mb-6 text-xs font-semibold uppercase tracking-[0.2em] text-[#ff6726]">
             Contact Us
           </div>
-          <h1 className="!text-6xl !leading-none font-bold text-white">
+          <h2 className="!text-6xl !leading-none font-bold text-white">
             Interested in working{" "}
             <span className="italic text-[#ff6726]">together?</span>
-          </h1>
+          </h2>
           <p className="mt-6 max-w-2xl text-base leading-relaxed !text-white md:text-lg">
             Share a few details about your project and we will be in touch
             shortly. Whether you are bringing a new product to life or refining a

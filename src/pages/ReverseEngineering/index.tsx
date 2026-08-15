@@ -314,11 +314,11 @@ function ReverseEngineering() {
               REVERSE ENGINEERING{" "}
               <span className="text-[#ff6726]">SERVICES</span>
             </h4>
-            <h1 className="max-w-3xl !text-[2rem] !leading-[1.1] font-bold text-white pt-4">
+            <p className="max-w-3xl !text-[2rem] !leading-[1.1] font-bold !text-white pt-4" style={{ fontFamily: "'Clash Grotesk', sans-serif" }}>
               Rebuild{" "}
-              <span className="text-[#ff6726]">Accurate CAD Models</span> from
+              <span className="!text-[#ff6726]">Accurate CAD Models</span> from
               Existing Parts
-            </h1>
+            </p>
             <h3 className="max-w-2xl !text-[1.125rem] text-white/80">
               Not every component comes with a complete set of design files.
               When original drawings are missing, outdated, or never created,
@@ -795,9 +795,9 @@ function ReverseEngineering() {
         <div className="mb-6 text-xs font-semibold uppercase tracking-[0.2em] text-[#ff6726]">
           Get Started
         </div>
-        <h1 className="!text-6xl !leading-none font-bold text-white max-md:!text-[2rem] max-md:!leading-[1.1]">
+        <h2 className="!text-6xl !leading-none font-bold text-white max-md:!text-[2rem] max-md:!leading-[1.1]">
           Recover the <span className="italic text-[#ff6726]">Design Data</span> You Need to Move Forward
-        </h1>
+        </h2>
         <p className="mt-6 max-w-2xl text-base leading-relaxed !text-white max-md:!text-[1.125rem] md:text-lg">
           Whether you need to reproduce an obsolete part, document a legacy component, or build on an existing design, FormaSharp can convert physical hardware into accurate CAD models and technical drawings.
         </p>

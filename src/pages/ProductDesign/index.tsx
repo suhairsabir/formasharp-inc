@@ -310,10 +310,10 @@ function ProductDesign() {
               PRODUCT DESIGN{" "}
               <span className="text-[#ff6726]">SERVICES</span>
             </h4>
-            <h1 className="max-w-2xl !text-[2rem] !leading-[1.1] font-bold text-white pt-4">
+            <p className="max-w-2xl !text-[2rem] !leading-[1.1] font-bold !text-white pt-4" style={{ fontFamily: "'Clash Grotesk', sans-serif" }}>
               Transform product ideas into{" "}
-              <span className="text-[#ff6726]">production ready</span> designs.
-            </h1>
+              <span className="!text-[#ff6726]">production ready</span> designs.
+            </p>
             <h3 className="max-w-xl !text-[1.125rem] text-white/80">
               FormaSharp turns concepts into well-defined products. From early
               concept development to detailed CAD models and technical
@@ -967,11 +967,11 @@ function ProductDesign() {
         <div className="mb-6 text-xs font-semibold uppercase tracking-[0.2em] text-[#ff6726]">
           Get Started
         </div>
-        <h1 className="!text-6xl !leading-none font-bold text-white max-md:!text-[2rem] max-md:!leading-[1.1]">
+        <h2 className="!text-6xl !leading-none font-bold text-white max-md:!text-[2rem] max-md:!leading-[1.1]">
           Turn your product concept
           <br />
           into a <span className="italic text-[#ff6726]">well-defined</span> design.
-        </h1>
+        </h2>
         <p className="mt-6 max-w-2xl text-base leading-relaxed !text-white max-md:!text-[1.125rem] md:text-lg">
           Whether you are starting with an idea, refining a prototype, or
           preparing for production, FormaSharp can help shape your concept into

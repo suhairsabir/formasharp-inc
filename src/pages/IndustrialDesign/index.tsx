@@ -674,10 +674,10 @@ function IndustrialDesign() {
           <div className="mb-6 text-xs font-semibold uppercase tracking-[0.2em] text-[#ff6726]">
             Get Started
           </div>
-          <h1 className="!text-[2rem] !leading-[1.1] font-bold text-white md:!text-6xl md:!leading-none">
+          <h2 className="!text-[2rem] !leading-[1.1] font-bold text-white md:!text-6xl md:!leading-none">
             Create a Product Experience That Feels{" "}
             <span className="italic text-[#ff6726]">Thoughtfully Designed</span>
-          </h1>
+          </h2>
           <p className="mt-6 max-w-2xl !text-[1.125rem] leading-relaxed !text-white md:!text-lg">
             Whether you are developing a new consumer product, refining usability,
             or improving the appearance of an existing concept, FormaSharp can
