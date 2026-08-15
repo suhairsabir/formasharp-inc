@@ -2,6 +2,7 @@ import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import { FaustProvider } from "@faustwp/core";
 import Layout from "@/components/Layout";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 import {
   Boldonse,
   Bricolage_Grotesque,
@@ -72,6 +73,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return (
     <FaustProvider pageProps={pageProps}>
+      <GoogleAnalytics />
       <div
         className={`${boldonse.variable} ${bricolageGrotesque.variable} ${poppins.variable} ${publicSans.variable} ${questrial.variable} ${gudea.variable} ${zenDots.variable}`}
       >
