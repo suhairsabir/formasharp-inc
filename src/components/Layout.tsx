@@ -187,19 +187,34 @@ export default function Layout({ children }: LayoutProps) {
                   key={item.href}
                   className="group/nav relative"
                 >
-                  <button
-                    type="button"
-                    aria-haspopup="menu"
-                    aria-expanded="false"
-                    className={`${triggerClasses} cursor-pointer bg-transparent border-0 p-0 font-inherit`}
-                  >
-                    {item.label}
-                    <ChevronDown
-                      className="size-4 transition-transform duration-300 group-hover/nav:rotate-180"
-                      strokeWidth={2.5}
-                      aria-hidden
-                    />
-                  </button>
+                  {item.href === "#" ? (
+                    <button
+                      type="button"
+                      aria-haspopup="menu"
+                      aria-expanded="false"
+                      className={`${triggerClasses} cursor-pointer bg-transparent border-0 p-0 font-inherit`}
+                    >
+                      {item.label}
+                      <ChevronDown
+                        className="size-4 transition-transform duration-300 group-hover/nav:rotate-180"
+                        strokeWidth={2.5}
+                        aria-hidden
+                      />
+                    </button>
+                  ) : (
+                    <Link
+                      href={item.href}
+                      aria-haspopup="menu"
+                      className={triggerClasses}
+                    >
+                      {item.label}
+                      <ChevronDown
+                        className="size-4 transition-transform duration-300 group-hover/nav:rotate-180"
+                        strokeWidth={2.5}
+                        aria-hidden
+                      />
+                    </Link>
+                  )}
 
                   {/* Hover bridge so the dropdown doesn't close as cursor leaves the trigger */}
                   <div
@@ -324,25 +339,50 @@ export default function Layout({ children }: LayoutProps) {
                 }
 
                 const isOpen = openMobileMenu === item.label;
+                const parentLabelClasses =
+                  "flex min-h-16 flex-1 items-center py-4 text-left text-2xl font-semibold leading-none";
                 return (
                   <div key={item.label} className="border-b border-black/15">
-                    <button
-                      type="button"
-                      onClick={() =>
-                        setOpenMobileMenu(isOpen ? null : item.label)
-                      }
-                      aria-expanded={isOpen}
-                      className="flex min-h-16 w-full items-center justify-between py-4 text-left text-2xl font-semibold leading-none"
-                      style={{ fontFamily: "'Clash Grotesk', sans-serif" }}
-                    >
-                      {item.label}
-                      <ChevronDown
-                        className={`size-6 transition-transform duration-300 ${
-                          isOpen ? "rotate-180" : ""
-                        }`}
-                        aria-hidden
-                      />
-                    </button>
+                    <div className="flex items-center">
+                      {item.href === "#" ? (
+                        <button
+                          type="button"
+                          onClick={() =>
+                            setOpenMobileMenu(isOpen ? null : item.label)
+                          }
+                          aria-expanded={isOpen}
+                          className={parentLabelClasses}
+                          style={{ fontFamily: "'Clash Grotesk', sans-serif" }}
+                        >
+                          {item.label}
+                        </button>
+                      ) : (
+                        <Link
+                          href={item.href}
+                          onClick={closeMobileMenu}
+                          className={parentLabelClasses}
+                          style={{ fontFamily: "'Clash Grotesk', sans-serif" }}
+                        >
+                          {item.label}
+                        </Link>
+                      )}
+                      <button
+                        type="button"
+                        onClick={() =>
+                          setOpenMobileMenu(isOpen ? null : item.label)
+                        }
+                        aria-expanded={isOpen}
+                        aria-label={`${isOpen ? "Collapse" : "Expand"} ${item.label} menu`}
+                        className="inline-flex size-12 shrink-0 items-center justify-center"
+                      >
+                        <ChevronDown
+                          className={`size-6 transition-transform duration-300 ${
+                            isOpen ? "rotate-180" : ""
+                          }`}
+                          aria-hidden
+                        />
+                      </button>
+                    </div>
 
                     <div
                       className={`grid transition-[grid-template-rows] duration-300 ${
