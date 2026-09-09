@@ -74,7 +74,6 @@ const SKIP_PAGE_URIS = new Set(
   [
     ...STATIC_PATHS,
     "/home",
-    "/sampleservice",
   ].map(normalizeUri),
 );
 
@@ -116,7 +115,7 @@ export const getServerSideProps: GetServerSideProps = async ({ res }) => {
       if (SKIP_PAGE_URIS.has(uri)) continue;
       // Prefer Next blog posts over raw WP post URIs already covered
       if (uri.startsWith("/hello-world")) continue;
-      // Legacy WP service CPT URLs live under /services/[slug] — skip; marketing pages are canonical
+      // Skip legacy WP service CPT URIs; marketing service pages are canonical
       if (uri.startsWith("/services/")) continue;
       push(uri, formatDate(page.modified));
     }

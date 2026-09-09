@@ -94,25 +94,6 @@ export const GET_SERVICES_LIST = /* GraphQL */ `
   }
 `;
 
-export const GET_SERVICE_BY_SLUG = /* GraphQL */ `
-  ${CORE_SERVICE_FIELDS}
-  query GetServiceBySlug($slug: ID!) {
-    service(id: $slug, idType: SLUG) {
-      ...CoreServiceFields
-    }
-  }
-`;
-
-export const GET_SERVICE_SLUGS = /* GraphQL */ `
-  query GetServiceSlugs($first: Int = 100) {
-    services(first: $first, where: { status: PUBLISH }) {
-      nodes {
-        slug
-      }
-    }
-  }
-`;
-
 export const GET_PORTFOLIO_LIST = /* GraphQL */ `
   ${CORE_PORTFOLIO_FIELDS}
   query GetPortfolioList($first: Int = 100) {
