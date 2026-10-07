@@ -9,7 +9,8 @@ import {
 import { ORG_LOGO_URL, serializeJsonLd, type JsonLd } from "@/lib/schema";
 
 const GOOGLE_SITE_VERIFICATION =
-  process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION?.trim() || undefined;
+  process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION?.trim() ||
+  "VlVQyk2ntHUKRigTyhHybIlNoNrpkb-5uSunaamF4_4";
 
 export type SeoProps = {
   title?: string;
