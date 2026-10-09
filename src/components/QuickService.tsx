@@ -103,49 +103,49 @@ const SERVICES: Service[] = [
     title: "PRODUCT DESIGN",
     description:
       "Ideas engineered into production-ready products with functional mechanical systems.",
-    href: "/ProductDesign",
+    href: "/product-design",
     icon: ICONS.productDesign,
   },
   {
     title: "INDUSTRIAL DESIGN",
     description:
       "Product form, usability, and visual appeal balanced with manufacturability.",
-    href: "/IndustrialDesign",
+    href: "/industrial-design",
     icon: ICONS.industrialDesign,
   },
   {
     title: "ENG. & SIMULATION",
     description:
       "Performance validated with detailed engineering analysis before you build.",
-    href: "/Simulation",
+    href: "/simulation",
     icon: ICONS.simulation,
   },
   {
     title: "3D PRINTING",
     description:
       "Rapid prototyping and low-volume production in engineering-grade materials.",
-    href: "/3dprinting",
+    href: "/3d-printing",
     icon: ICONS.printing,
   },
   {
     title: "CAD SERVICES",
     description:
       "Precise 3D models, assemblies, and technical drawings for engineering and production.",
-    href: "/CADServices",
+    href: "/cad-services",
     icon: ICONS.cad,
   },
   {
     title: "REVERSE ENGINEERING",
     description:
       "Accurate CAD models rebuilt from existing parts for reproduction or improvement.",
-    href: "/ReverseEngineering",
+    href: "/reverse-engineering",
     icon: ICONS.reverse,
   },
   {
     title: "DESIGN FOR MANUFACTURING",
     description:
       "Designs optimized for efficient, scalable, and cost-effective production.",
-    href: "/DesignForManufacturing",
+    href: "/design-for-manufacturing",
     icon: ICONS.dfm,
   },
 ];

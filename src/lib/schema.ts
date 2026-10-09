@@ -52,7 +52,7 @@ export function buildOrganizationSchema(): JsonLd {
 export type ServiceSchemaInput = {
   name: string;
   description: string;
-  /** Frontend path, e.g. `/CADServices` */
+  /** Frontend path, e.g. `/cad-services` */
   path: string;
 };
 
@@ -80,49 +80,49 @@ export const SERVICE_PAGE_SEO = {
     title: "Mechanical Engineering & Simulation",
     description:
       "Thermal analysis, structural optimization, and failure investigation for manufacturers and startups in Toronto, the GTA, and Southern Ontario.",
-    path: "/Simulation",
+    path: "/simulation",
     serviceName: "Mechanical Engineering & Simulation",
   },
   ProductDesign: {
     title: "Product Design",
     description:
       "Product design and mechanical engineering from concept to production-ready designs for companies in Toronto, the GTA, and Southern Ontario.",
-    path: "/ProductDesign",
+    path: "/product-design",
     serviceName: "Product Design",
   },
   IndustrialDesign: {
     title: "Industrial Design",
     description:
       "Industrial design focused on form, usability, and manufacturability for product teams across Toronto, the GTA, and Southern Ontario.",
-    path: "/IndustrialDesign",
+    path: "/industrial-design",
     serviceName: "Industrial Design",
   },
   DesignForManufacturing: {
     title: "Design for Manufacturing (DFM)",
     description:
       "Design for manufacturing services that improve cost, quality, and production readiness for Toronto, GTA, and Southern Ontario manufacturers.",
-    path: "/DesignForManufacturing",
+    path: "/design-for-manufacturing",
     serviceName: "Design for Manufacturing (DFM)",
   },
   CADServices: {
     title: "CAD Services",
     description:
       "Precision CAD modeling, assemblies, and technical drawings for engineering and fabrication teams in Toronto, the GTA, and Southern Ontario.",
-    path: "/CADServices",
+    path: "/cad-services",
     serviceName: "CAD Services",
   },
   ReverseEngineering: {
     title: "Reverse Engineering",
     description:
       "Reverse engineering and CAD reconstruction from existing parts for manufacturers across Toronto, the GTA, and Southern Ontario.",
-    path: "/ReverseEngineering",
+    path: "/reverse-engineering",
     serviceName: "Reverse Engineering",
   },
   "3dprinting": {
     title: "Prototyping & 3D Printing",
     description:
       "Rapid prototyping and 3D printing in engineering-grade materials for product development teams in Toronto, the GTA, and Southern Ontario.",
-    path: "/3dprinting",
+    path: "/3d-printing",
     serviceName: "Prototyping & 3D Printing",
   },
 } as const;

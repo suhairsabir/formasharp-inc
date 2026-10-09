@@ -186,11 +186,11 @@ const PROCESS_STEPS: ProcessStep[] = [
 ];
 
 const RELATED_SERVICES = [
-  { label: "Product Design", href: "/ProductDesign" },
-  { label: "Mechanical Engineering & Simulation", href: "/Simulation" },
-  { label: "CAD Services", href: "/CADServices" },
-  { label: "Prototyping & 3D Printing", href: "/3dprinting" },
-  { label: "Design for Manufacturing", href: "/DesignForManufacturing" },
+  { label: "Product Design", href: "/product-design" },
+  { label: "Mechanical Engineering & Simulation", href: "/simulation" },
+  { label: "CAD Services", href: "/cad-services" },
+  { label: "Prototyping & 3D Printing", href: "/3d-printing" },
+  { label: "Design for Manufacturing", href: "/design-for-manufacturing" },
 ];
 
 const PROBLEM_SIGNALS = [

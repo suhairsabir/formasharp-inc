@@ -58,10 +58,8 @@ export default function Seo({
 
   const finalRobots = robots || buildRobots(seo);
 
-  const ogTitle =
-    seo?.opengraphTitle?.trim() || yoastTitle || finalTitle;
-  const ogDescription =
-    seo?.opengraphDescription?.trim() || finalDescription;
+  const ogTitle = finalTitle;
+  const ogDescription = finalDescription;
   const ogImageUrl =
     seo?.opengraphImage?.sourceUrl || ogImage || ORG_LOGO_URL;
   const finalOgType = seo?.opengraphType || ogType || "website";
@@ -69,10 +67,8 @@ export default function Seo({
   const ogUrl =
     finalCanonical || toAbsoluteUrl(seo?.opengraphUrl, frontendPath);
 
-  const twitterTitle =
-    seo?.twitterTitle?.trim() || ogTitle;
-  const twitterDescription =
-    seo?.twitterDescription?.trim() || ogDescription;
+  const twitterTitle = ogTitle;
+  const twitterDescription = ogDescription;
   const twitterImage =
     seo?.twitterImage?.sourceUrl || ogImageUrl;
 

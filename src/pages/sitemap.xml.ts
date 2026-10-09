@@ -60,13 +60,13 @@ const STATIC_PATHS = [
   "/patent-ip",
   "/services",
   "/portfolio",
-  "/Simulation",
-  "/ProductDesign",
-  "/IndustrialDesign",
-  "/DesignForManufacturing",
-  "/CADServices",
-  "/ReverseEngineering",
-  "/3dprinting",
+  "/simulation",
+  "/product-design",
+  "/industrial-design",
+  "/design-for-manufacturing",
+  "/cad-services",
+  "/reverse-engineering",
+  "/3d-printing",
 ];
 
 /** WP page URIs that duplicate Next routes or should not be indexed */

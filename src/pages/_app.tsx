@@ -20,6 +20,7 @@ const boldonse = Boldonse({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-boldonse",
+  fallback: ["Arial"],
 });
 
 const bricolageGrotesque = Bricolage_Grotesque({

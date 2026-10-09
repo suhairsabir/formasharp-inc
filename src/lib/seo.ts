@@ -124,13 +124,13 @@ export function toAbsoluteUrl(
 
 export function buildRobots(seo?: YoastSeo | null): string | undefined {
   if (!seo) return undefined;
-  const index =
-    seo.metaRobotsNoindex?.toLowerCase() === "noindex" ? "noindex" : "index";
+  // The headless WordPress site is noindexed on purpose. Do not copy that
+  // onto the public site. Pass an explicit `robots` prop to Seo to opt out.
   const follow =
     seo.metaRobotsNofollow?.toLowerCase() === "nofollow"
       ? "nofollow"
       : "follow";
-  return `${index}, ${follow}`;
+  return `index, ${follow}`;
 }
 
 /**

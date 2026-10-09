@@ -95,49 +95,49 @@ const SERVICES: ServiceItem[] = [
     title: "Mechanical Engineering & Simulation",
     description:
       "Performance validated with detailed engineering analysis before you build.",
-    href: "/Simulation",
+    href: "/simulation",
     icon: ICONS.simulation,
   },
   {
     title: "Product Design",
     description:
       "Ideas engineered into production-ready products with functional mechanical systems.",
-    href: "/ProductDesign",
+    href: "/product-design",
     icon: ICONS.productDesign,
   },
   {
     title: "Industrial Design",
     description:
       "Product form, usability, and visual appeal balanced with manufacturability.",
-    href: "/IndustrialDesign",
+    href: "/industrial-design",
     icon: ICONS.industrialDesign,
   },
   {
     title: "Design for Manufacturing (DFM)",
     description:
       "Designs optimized for efficient, scalable, and cost-effective production.",
-    href: "/DesignForManufacturing",
+    href: "/design-for-manufacturing",
     icon: ICONS.dfm,
   },
   {
     title: "CAD Services",
     description:
       "Precise 3D models, assemblies, and technical drawings for engineering and production.",
-    href: "/CADServices",
+    href: "/cad-services",
     icon: ICONS.cad,
   },
   {
     title: "Reverse Engineering",
     description:
       "Accurate CAD models rebuilt from existing parts for reproduction or improvement.",
-    href: "/ReverseEngineering",
+    href: "/reverse-engineering",
     icon: ICONS.reverse,
   },
   {
     title: "Prototyping & 3D Printing",
     description:
       "Rapid prototyping and low-volume production in engineering-grade materials.",
-    href: "/3dprinting",
+    href: "/3d-printing",
     icon: ICONS.printing,
   },
 ];

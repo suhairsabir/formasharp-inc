@@ -531,7 +531,7 @@ export default function PatentIpPage() {
             preparation.
           </p>
           <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <Link href="/ProductDesign" className="button-primary inline-block">
+            <Link href="/product-design" className="button-primary inline-block">
               Explore Our Product Development Services
             </Link>
             <button

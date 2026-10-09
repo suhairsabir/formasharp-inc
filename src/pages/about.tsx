@@ -33,32 +33,32 @@ type ServiceItem = {
 
 const SERVICES: ServiceItem[] = [
   {
-    href: "/ProductDesign",
+    href: "/product-design",
     label: "Product Design",
     description: "Concept to production-ready engineered products.",
   },
   {
-    href: "/CADServices",
+    href: "/cad-services",
     label: "CAD Services",
     description: "Precision 3D models, assemblies, and technical drawings.",
   },
   {
-    href: "/Simulation",
+    href: "/simulation",
     label: "Mechanical Engineering & Simulation",
     description: "FEA, CFD, and thermal analysis for engineering decisions.",
   },
   {
-    href: "/DesignForManufacturing",
+    href: "/design-for-manufacturing",
     label: "Design for Manufacturing (DFM)",
     description: "Optimize designs for efficient, cost-effective production.",
   },
   {
-    href: "/ReverseEngineering",
+    href: "/reverse-engineering",
     label: "Reverse Engineering",
     description: "Rebuild accurate CAD models from existing physical parts.",
   },
   {
-    href: "/3dprinting",
+    href: "/3d-printing",
     label: "Prototyping & 3D Printing",
     description: "High-resolution prototypes on engineering-grade materials.",
   },
